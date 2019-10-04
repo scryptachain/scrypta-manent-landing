@@ -47,7 +47,7 @@
 											<img class="logo-default" src="./assets/img/logo/logo-1.png">
 										</span>
 									</a>
-									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
+									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" id="close" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
 										<span class="sr-only">Toggle navigation</span>
 										<span class="bars">
 											<span class="bar"></span>
@@ -65,7 +65,7 @@
 									<ul id="primary-nav" class="main-nav nav align-items-lg-stretch justify-content-lg-start" data-submenu-options='{ "toggleType":"fade", "handler":"mouse-in-out" }'>
 										
 										<li>
-											<a href="#wrap">
+											<a href="#wrap" onClick="document.getElementById('close').click()">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -79,7 +79,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#features">
+											<a href="#features" onClick="document.getElementById('close').click()">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -93,7 +93,7 @@
 											</a>
 										</li>											
 										<li>
-											<a href="#about">
+											<a href="#about" onClick="document.getElementById('close').click()">
 												<span class="link-icon"></span>
 												<span class="link-txt">
 													<span class="link-ext"></span>
@@ -154,7 +154,7 @@
 	
 									<div class="ld-fancy-heading">
 										<h1 data-text-rotator="true">
-											<span class="ld-fh-txt"> Usala con
+											<span class="ld-fh-txt"> Usala con <br>
 												<span class="txt-rotate-keywords">
 													<span class="keyword active text-primary">Android</span>
 													<span class="keyword text-secondary">iOS</span>
@@ -398,7 +398,7 @@
 									</div><!-- /.iconbox-icon-wrap -->
 									<div class="contents">
 										<h3>Proprietà Intellettuale</h3>
-										<p class="font-size-16 lh-165">Gli autori di opere fotografiche,musicali, romanzi e testi digitali, saranno in grado proteggere le proprie creazioni contro qualsiasi forma di plagio, contraffazione o diffusioni illecite, grazie a un semplice click. </p>
+										<p class="font-size-16 lh-165">Gli autori di opere fotografiche, musicali, romanzi e testi digitali, saranno in grado proteggere le proprie creazioni contro qualsiasi forma di plagio, contraffazione o diffusioni illecite, grazie a un semplice click. </p>
 									</div><!-- /.contents -->
 								</div><!-- /.iconbox -->
 
@@ -419,7 +419,7 @@
 									</div><!-- /.iconbox-icon-wrap -->
 									<div class="contents">
 										<h3>Wallet</h3>
-										<p class="font-size-16 lh-165">Per poter utilizzare le funzioni di firma digitale e marcatura temporale avrai bisogno delle LYRA coin, che potrai gestire facilmente direttamenta dall’app grazie alle sue funzioni di mobile wallet.</p>
+										<p class="font-size-16 lh-165">Per poter utilizzare le funzioni di firma digitale e marcatura temporale avrai bisogno delle LYRA coin, che potrai gestire facilmente direttamente dall’app grazie alle sue funzioni di mobile wallet.</p>
 									</div><!-- /.contents -->
 								</div><!-- /.iconbox -->
 
@@ -504,7 +504,7 @@
 									</div><!-- /.mockup-content-container -->
 					
 					<!-- /mockup -->
-					<div class="lqd-space visible-lg visible-md" id="about" style="height: 100px;"></div>
+					<div class="lqd-space" id="about" style="height: 100px;"></div>
 					<section class="vc_row pt-90 pb-90 bg-cover" style="background-image: url(./assets/demo/misc/bg-banner2.jpg);" data-parallax="true" data-parallax-options='{"parallaxBG": true}'>
 						<div class="container">
 							<div class="row d-flex flex-wrap align-items-center">
@@ -700,7 +700,7 @@
 				</div><!-- /.container -->
 			</section>
 
-			<section class="vc_row pt-60">
+			<section class="vc_row pt-60 mobile-center">
 				<div class="container">
 					<div class="row d-flex flex-wrap align-items-center">
 
@@ -714,7 +714,7 @@
 							
 						</div><!-- /.lqd-column col-md-6 -->
 						
-						<div class="lqd-column col-md-5 text-md-right">
+						<div class="lqd-column col-md-5 text-md-right m-top-mobile">
 							
 							<ul class="social-icon social-icon-md mb-25">
 								<li><a href="https://www.facebook.com/scryptafoundation/" target="_blank"><i class="fab fa-facebook"></i></li>
@@ -740,6 +740,12 @@
 <script src="./assets/js/theme-vendors.js"></script>
 <script src="./assets/js/theme.min.js"></script>
 <script src="./assets/js/liquidAjaxMailchimp.min.js"></script>
-
+<style>
+	@media screen and (max-width: 768px){
+		.m-top-mobile {
+			margin-top:25px;
+		}
+	}
+</style>
 </body>
 </html>
